@@ -7,9 +7,9 @@ getQuoteButton.addEventListener('click', onGetQuote);
 
 function onGetQuote(e) {
     e.preventDefault()
-    const firstName = getFirstName.value
-    const lastName = getLastName.value
-    const fullName =  firstName + ' ' + lastName
+    const firstName = getFirstName.value;
+    const lastName = getLastName.value;
+    const fullName =  `${firstName} ${lastName}`
     updateCardDisplay.textContent = fullName
     
 }
